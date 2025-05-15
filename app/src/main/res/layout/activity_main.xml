@@ -11,6 +11,7 @@
     <ImageView
         android:id="@+id/ivLogo"
         android:src="@drawable/logo"
+        android:contentDescription="Logo de Filmathon"
         android:scaleType="centerCrop"
         android:layout_width="285dp"
         android:layout_height="250dp"
