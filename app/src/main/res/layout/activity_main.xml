@@ -11,7 +11,7 @@
     <ImageView
         android:id="@+id/ivLogo"
         android:src="@drawable/logo"
-        android:contentDescription="Logo de Filmathon"
+        android:contentDescription="@string/logo_filmathon"
         android:scaleType="centerCrop"
         android:layout_width="285dp"
         android:layout_height="250dp"
@@ -22,7 +22,7 @@
 
     <TextView
         android:id="@+id/tvSubtitulo"
-        android:text="Organiza tus maratones de cine"
+        android:text="@string/subtitle_principal"
         android:fontFamily="@font/QuicksandRegular"
         android:textSize="16sp"
         android:layout_width="wrap_content"
@@ -34,7 +34,7 @@
 
     <Button
         android:id="@+id/btnRegistrarse"
-        android:text="Registrarse"
+        android:text="@string/registrarse"
         style="@style/FilmathonButton"
         app:backgroundTint="@null"
         android:layout_width="0dp"
@@ -43,11 +43,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="60dp"
-        app:layout_constraintWidth_percent="0.5"/>
+        app:layout_constraintWidth_percent="0.6"/>
 
     <Button
         android:id="@+id/btnIniciarSesion"
-        android:text="Iniciar sesión"
+        android:text="@string/login"
         style="@style/FilmathonButton"
         app:backgroundTint="@null"
         android:layout_width="0dp"
@@ -56,11 +56,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="24dp"
-        app:layout_constraintWidth_percent="0.5"/>
+        app:layout_constraintWidth_percent="0.6"/>
 
     <Button
         android:id="@+id/btnInvitado"
-        android:text="Modo invitado"
+        android:text="@string/modo_invitado"
         style="@style/FilmathonButton"
         app:backgroundTint="@null"
         android:layout_width="0dp"
@@ -69,6 +69,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="24dp"
-        app:layout_constraintWidth_percent="0.5"/>
+        app:layout_constraintWidth_percent="0.6"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

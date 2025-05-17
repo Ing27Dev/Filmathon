@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">Filmathon</string>
+    <string name="logo_filmathon">Logo de Filmathon</string>
+    <string name="subtitle_principal">Organiza tus maratones de cine</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="modo_invitado">Modo invitado</string>
+    <string name="back">Volver</string>
+    <string name="crear_maraton">Crear Maratón</string>
+    <string name="subtitle_new_marathon">Modo invitado</string>
+    <string name="genero">Genero</string>
+    <string name="duracion">Duración</string>
+    <string name="min_hours">2h</string>
+    <string name="max_hours">12h</string>
+    <string name="anyo">Año</string>
+    <string name="tematica">Temática</string>
+    <string name="escribe_un_tema">Escribe un tema</string>
+    <string name="plataforma">Plataforma</string>
+    <string name="resultado">Resultado</string>
+    <string name="generar_de_nuevo">Generar de nuevo</string>
+    <string name="genero_detail">Genero:</string>
+    <string name="anyo_datail">Año:</string>
+    <string name="duracion_detail">Duracion:</string>
+    <string name="donde_verla">Donde verla</string>
+    <string name="poster_pelicula">Poster película</string>
+    <string name="ver_info">Ver detalles película</string>
+    <string name="iniciar">Iniciar</string>
 </resources>

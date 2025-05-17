@@ -11,11 +11,11 @@
     <ImageButton
         android:id="@+id/btnAtras"
         android:src="@drawable/ic_arrow_back"
-        android:contentDescription="Volver"
+        android:contentDescription="@string/back"
         android:background="@null"
-        app:tint="#E08441"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        app:tint="@color/filmathon_orange"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="32dp"
@@ -23,7 +23,7 @@
 
     <TextView
         android:id="@id/tvTitulo"
-        android:text="Crear Maratón"
+        android:text="@string/crear_maraton"
         android:textSize="24sp"
         android:fontFamily="@font/QuicksandBold"
         android:layout_width="wrap_content"
@@ -35,7 +35,7 @@
 
     <TextView
         android:id="@+id/tvSubtitulo"
-        android:text="Modo invitado"
+        android:text="@string/subtitle_new_marathon"
         android:fontFamily="@font/QuicksandRegular"
         android:textSize="14sp"
         android:layout_width="wrap_content"
@@ -46,7 +46,7 @@
 
     <TextView
         android:id="@+id/tvGenero"
-        android:text="Genero"
+        android:text="@string/genero"
         android:textSize="20sp"
         android:fontFamily="@font/QuicksandRegular"
         android:layout_width="wrap_content"
@@ -59,6 +59,7 @@
     <Spinner
         android:id="@+id/spinnerGenero"
         android:background="@drawable/input_background"
+        android:minHeight="48dp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintWidth_percent="0.7"
@@ -69,7 +70,7 @@
 
     <TextView
         android:id="@+id/tvDuracion"
-        android:text="Duración"
+        android:text="@string/duracion"
         android:textSize="20sp"
         android:fontFamily="@font/QuicksandRegular"
         android:layout_width="wrap_content"
@@ -81,8 +82,8 @@
 
     <SeekBar
         android:id="@+id/seekBarDuracion"
-        android:thumbTint="#E08441"
-        android:progressTint="#fedf1e"
+        android:thumbTint="@color/filmathon_orange"
+        android:progressTint="@color/filmathon_yellow"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintWidth_percent="0.7"
@@ -93,25 +94,27 @@
 
     <TextView
         android:id="@+id/tvMin"
-        android:text="2h"
+        android:text="@string/min_hours"
         android:fontFamily="@font/QuicksandMedium"
         android:textSize="20sp"
         android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/tvDuracion"
         app:layout_constraintEnd_toStartOf="@id/seekBarDuracion"/>
 
     <TextView
         android:id="@+id/tvMax"
-        android:text="12h"
+        android:text="@string/max_hours"
         android:textSize="20sp"
         android:fontFamily="@font/QuicksandMedium"
         android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/tvDuracion"
         app:layout_constraintStart_toEndOf="@id/seekBarDuracion"/>
 
     <TextView
         android:id="@+id/tvAnyo"
-        android:text="Año"
+        android:text="@string/anyo"
         android:textSize="20sp"
         android:fontFamily="@font/QuicksandRegular"
         android:layout_width="wrap_content"
@@ -124,6 +127,7 @@
     <Spinner
         android:id="@+id/spinnerAnyo"
         android:background="@drawable/input_background"
+        android:minHeight="48dp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintWidth_percent="0.7"
@@ -134,7 +138,7 @@
 
     <TextView
         android:id="@+id/tvTematica"
-        android:text="Temática"
+        android:text="@string/tematica"
         android:textSize="20sp"
         android:fontFamily="@font/QuicksandRegular"
         android:layout_width="wrap_content"
@@ -147,8 +151,11 @@
     <EditText
         android:id="@+id/etTematica"
         android:background="@drawable/input_background"
-        android:hint="Escribe un tema"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        android:hint="@string/escribe_un_tema"
         android:fontFamily="@font/QuicksandRegular"
+        android:minHeight="48dp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/tvTematica"
@@ -159,7 +166,7 @@
 
     <TextView
         android:id="@+id/tvPlataforma"
-        android:text="Plataforma"
+        android:text="@string/plataforma"
         android:textSize="20sp"
         android:fontFamily="@font/QuicksandRegular"
         android:layout_width="wrap_content"
@@ -170,6 +177,7 @@
         android:layout_marginTop="24dp"/>
 
     <Spinner
+        android:minHeight="48dp"
         android:id="@+id/spinnerPlataforma"
         android:background="@drawable/input_background"
         android:layout_width="0dp"
@@ -182,7 +190,7 @@
 
     <Button
         android:id="@+id/btnCrearMaraton"
-        android:text="Crear Maratón"
+        android:text="@string/iniciar"
         style="@style/FilmathonButton"
         app:backgroundTint="@null"
         android:layout_width="0dp"
@@ -190,13 +198,13 @@
         app:layout_constraintTop_toBottomOf="@id/spinnerPlataforma"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="70dp"
-        app:layout_constraintWidth_percent="0.5"/>
+        android:layout_marginTop="50dp"
+        app:layout_constraintWidth_percent="0.6"/>
 
     <ImageView
         android:id="@+id/logoMini"
         android:src="@drawable/logo"
-        android:contentDescription="Logo de Filmathon"
+        android:contentDescription="@string/logo_filmathon"
         android:layout_width="60dp"
         android:layout_height="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
