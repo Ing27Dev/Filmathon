@@ -23,7 +23,7 @@
     <TextView
         android:id="@+id/tvSubtitulo"
         android:text="@string/subtitle_principal"
-        android:fontFamily="@font/QuicksandRegular"
+        android:fontFamily="@font/quicksand_regular"
         android:textSize="16sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
